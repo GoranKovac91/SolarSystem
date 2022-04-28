@@ -16,7 +16,7 @@ public class MainSceneScript : MainScript
 
         if (dropdown.value == 1)
         {
-            SceneManager.LoadScene("Earth", LoadSceneMode.Additive);
+            SceneManager.LoadScene("Earth", LoadSceneMode.Single);
         }
     }
 }
