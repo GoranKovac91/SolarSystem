@@ -595,9 +595,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 851.5, y: 50}
+  m_AnchoredPosition: {x: 37.8833, y: -497.06854}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 2.31, y: 0.5}
+  m_Pivot: {x: 1.0507655, y: -0.79079473}
 --- !u!114 &261674584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -723,7 +723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.9433962, g: 0.09344962, b: 0.09344962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1260,7 +1260,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -18, y: 0}
+  m_SizeDelta: {x: -17, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &579978982
 MonoBehaviour:
@@ -1358,6 +1358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 764175104}
+  - component: {fileID: 764175106}
   m_Layer: 5
   m_Name: Texts
   m_TagString: Untagged
@@ -1387,6 +1388,22 @@ RectTransform:
   m_AnchoredPosition: {x: 209, y: 111}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &764175106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764175103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93254435fcd798842a7cb752c9ae01a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _basicInformation:
+  - {fileID: 1862881190}
+  - {fileID: 1572155212}
+  - {fileID: 463930661}
 --- !u!1 &870144078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,7 +1437,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.2}
+  m_AnchorMax: {x: 1, y: 0.81333333}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1564,7 +1581,7 @@ RectTransform:
   m_GameObject: {fileID: 985239319}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.94, y: 1.61, z: 1}
   m_Children: []
   m_Father: {fileID: 1843254285}
   m_RootOrder: 1
@@ -1587,7 +1604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1706,16 +1723,16 @@ RectTransform:
   m_GameObject: {fileID: 1162236346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 1.08, z: 1}
+  m_LocalScale: {x: 1.12, y: 0.43, z: 1}
   m_Children: []
   m_Father: {fileID: 1997335753}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 1, y: 1}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1162236348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1752,21 +1769,23 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 71f442a0b5b748e4caab1de5a21ae88c, type: 3}
-    m_FontSize: 20
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 8
-    m_MaxSize: 58
+    m_MaxSize: 41
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Until the time of Napoleon, there were less than 1 billion people on Earth
-    at any one time. Since the Second World War, we have been adding a billion people
-    to the global population every 12-15 years. Our population is more than double
-    today what it was in 1970.
+  m_Text: "Mean radius\t6371.0 km (3958.8 mi)[9]\r\nEquatorial radius\t6378.137 km
+    (3963.191 mi)[10][11]\r\nPolar radius\t6356.752 km (3949.903 mi)[12]\r\nFlattening\t1/298.257222101
+    (ETRS89)[13]\r\nCircumference\t\r\n40075.017 km equatorial (24901.461 mi)[11]\r\n40007.86
+    km meridional (24859.73 mi)[14][n 4]\r\nSurface area\t\r\n510072000 km2 (196940000
+    sq mi)[15][n 5]\r\n148940000 km2 land (57510000 sq mi)\r\n361132000 km2 ocean
+    (139434000 sq mi)\r\nVolume\t1.08321\xD71012 km3 (2.59876\xD71011 cu mi)[5]\r\n"
 --- !u!222 &1162236350
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1858,7 +1877,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 870144079}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.2
+  m_Size: 0.81333333
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2477,12 +2496,9 @@ MonoBehaviour:
   _statisticsText:
   - {fileID: 261674585}
   - {fileID: 1162236349}
-  _nextButton: {fileID: 1697880898}
-  _previousButton: {fileID: 443473572}
   _activeInfoText: 0
   _infoObject: {fileID: 764175103}
   _statisticsObject: {fileID: 1997335752}
-  isChanged: 0
 --- !u!1 &1843254284
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,11 +2590,11 @@ MonoBehaviour:
   m_Options:
     m_Options:
     - m_Text: Basic Information
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 21300000, guid: 24c27d853392184429131ac6e6d06ca8, type: 3}
     - m_Text: Earth in numbers
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 21300000, guid: 24c27d853392184429131ac6e6d06ca8, type: 3}
     - m_Text: Interesting Facts
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 21300000, guid: 24c27d853392184429131ac6e6d06ca8, type: 3}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2615,8 +2631,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 24c27d853392184429131ac6e6d06ca8, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2741,6 +2757,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1997335753}
+  - component: {fileID: 1997335754}
   m_Layer: 5
   m_Name: StatisticsText
   m_TagString: Untagged
@@ -2769,3 +2786,18 @@ RectTransform:
   m_AnchoredPosition: {x: 621.5, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1997335754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997335752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80c8e249a070a54d9c9a7e81f15e77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statistics:
+  - {fileID: 261674585}
+  - {fileID: 1162236349}

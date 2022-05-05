@@ -53,13 +53,14 @@
     <UnityVersion>2020.3.24f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Earth.cs" />
+    <Compile Include="Assets\Scripts\PlanetSceneScript.cs" />
     <Compile Include="Assets\Scripts\PlanetRottateScript.cs" />
     <Compile Include="Assets\Scripts\CameraRotation.cs" />
     <Compile Include="Assets\Scripts\MainScript.cs" />
     <Compile Include="Assets\Scripts\MainSceneScript.cs" />
+    <Compile Include="Assets\Scripts\StatisticsScript.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\ListScript.cs" />
+    <Compile Include="Assets\Scripts\BasicInfoScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
