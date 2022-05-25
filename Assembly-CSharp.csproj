@@ -54,13 +54,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlanetSceneScript.cs" />
+    <Compile Include="Assets\Scripts\BasicInfoScript.cs" />
     <Compile Include="Assets\Scripts\PlanetRottateScript.cs" />
     <Compile Include="Assets\Scripts\CameraRotation.cs" />
     <Compile Include="Assets\Scripts\MainScript.cs" />
     <Compile Include="Assets\Scripts\MainSceneScript.cs" />
     <Compile Include="Assets\Scripts\StatisticsScript.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\BasicInfoScript.cs" />
+    <Compile Include="Assets\Scripts\FactsScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

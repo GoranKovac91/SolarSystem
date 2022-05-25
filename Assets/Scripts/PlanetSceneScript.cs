@@ -10,11 +10,10 @@ public class PlanetSceneScript : MonoBehaviour
 {
     [SerializeField] protected Dropdown _dropdown;
     [SerializeField] protected List<Text> DropdownTexts;
-    [SerializeField] protected List<Text> infoTexts;
-    [SerializeField] protected  List<Text> _statisticsText;
     [SerializeField] protected int _activeInfoText = 0;
     [SerializeField] private GameObject _infoObject;
     [SerializeField] private GameObject _statisticsObject;
+    [SerializeField] private GameObject _factsObject;
 
     private void Awake()
     {
@@ -23,8 +22,9 @@ public class PlanetSceneScript : MonoBehaviour
     }
     private void Start()
     {
-        _infoObject.SetActive(true);
+        ///_infoObject.SetActive(true);
         _statisticsObject.SetActive(false);
+        _factsObject.SetActive(false);
     }
  
 
@@ -35,15 +35,20 @@ public class PlanetSceneScript : MonoBehaviour
             case 0:
                 _infoObject.SetActive(true);
                 _statisticsObject.SetActive(false);
+                _factsObject.SetActive(false);
 
                 break;
             case 1:
                 _statisticsObject.SetActive(true);
                 _infoObject.SetActive(false);
+                _factsObject.SetActive(false);
 
                 break;
             case 2:
-                
+                _factsObject.SetActive(true);
+                _statisticsObject.SetActive(false);
+                _infoObject.SetActive(false);
+
                 break;
              
         }
@@ -81,7 +86,7 @@ public class PlanetSceneScript : MonoBehaviour
         }
         else
         {
-            return null;
+            return FactsScript.Instance.facts;
         }
                 
     }

@@ -14,7 +14,7 @@ public class MainSceneScript : MainScript
     public override void Dropdown(Dropdown dropdown)
     {
 
-        if (dropdown.value == 1)
+        if (dropdown.value == 3)
         {
             SceneManager.LoadScene("Earth", LoadSceneMode.Single);
         }

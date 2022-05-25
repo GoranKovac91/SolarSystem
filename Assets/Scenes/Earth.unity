@@ -250,6 +250,7 @@ RectTransform:
   - {fileID: 764175104}
   - {fileID: 1997335753}
   - {fileID: 1584463865}
+  - {fileID: 340153532}
   m_Father: {fileID: 1787532657}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -752,6 +753,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 331332512}
   m_CullTransparentMesh: 1
+--- !u!1 &340153531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 340153532}
+  - component: {fileID: 340153533}
+  m_Layer: 5
+  m_Name: InterestingFacts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &340153532
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340153531}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2031614456}
+  - {fileID: 1407211538}
+  - {fileID: 577730291}
+  m_Father: {fileID: 102813622}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 886, y: 101}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &340153533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340153531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b91a689ec5a019f48b598df49cf5eb1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  facts:
+  - {fileID: 2031614458}
+  - {fileID: 1407211540}
+  - {fileID: 577730293}
 --- !u!1 &341758070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,6 +1207,8 @@ GameObject:
   - component: {fileID: 546360981}
   - component: {fileID: 546360980}
   - component: {fileID: 546360979}
+  - component: {fileID: 546360983}
+  - component: {fileID: 546360982}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1223,6 +1281,146 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &546360982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546360978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18bbbca4cae79d24f8056e843c7c1e17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _previousPosition: {x: 0, y: 0, z: 0}
+  _mainCamera: {fileID: 0}
+  offset: {x: 0, y: 0, z: 0}
+--- !u!114 &546360983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546360978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96391b84ad683741bc3d49f32d135f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 0}
+  _panSpeed: 20
+  _panBorderThickness: 20
+--- !u!1 &577730290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 577730291}
+  - component: {fileID: 577730294}
+  - component: {fileID: 577730293}
+  - component: {fileID: 577730292}
+  m_Layer: 5
+  m_Name: Text3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &577730291
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577730290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.34, y: 0.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 340153532}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &577730292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577730290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &577730293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577730290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 71f442a0b5b748e4caab1de5a21ae88c, type: 3}
+    m_FontSize: 22
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 8
+    m_MaxSize: 52
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "Asia spans 1,7139,445 square miles and is home to some of the most densely
+    populated countries in the world (China, India, and Indonesia\u2014to name a
+    few).\n\nWith more than 40 countries through the continent of Asia\u2014some
+    of which are the most populated countries of all\u2014it\u2019s not hard to wrap
+    your head around the fact that 60 percent of the world lives there.\n\nThe Atacama
+    Desert in Chile is known as the driest place in the world, but despite it being
+    dry-to-the-bone, the desert is actually right next to the biggest body of water
+    on Earth\u2014the Pacific Ocean. Though it\u2019s hot in the Atacama Desert,
+    its temps average at about 63\xB0F.\n\nAfrica covers about 5,000 miles\u2014more
+    than three times the wingspan of the U.S.The Sahara is Earth\u2019s largest hot
+    desert. Surprisingly though, it\u2019s not the world\u2019s largest desert\u2026\n\nIt
+    may not be the largest or even the smallest continent (it\u2019s kind of just
+    stuck in the middle) but Antarctica stores most of the world\u2019s freshwater.About
+    90 percent of it isn\u2019t even water at all\u2014it\u2019s locked inside frozen
+    polar ice sheets.\n\nAccording to the American Museum of Natural History, only
+    a little over 3 percent of the world\u2019s water is freshwater. The rest (96
+    percent) is salt\u2014or saline\u2014and is found in the ocean.\n\n"
+--- !u!222 &577730294
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577730290}
+  m_CullTransparentMesh: 1
 --- !u!1 &579978980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1723,7 +1921,7 @@ RectTransform:
   m_GameObject: {fileID: 1162236346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.12, y: 0.43, z: 1}
+  m_LocalScale: {x: 1.24, y: 0.52, z: 1}
   m_Children: []
   m_Father: {fileID: 1997335753}
   m_RootOrder: 1
@@ -1920,6 +2118,109 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303884749}
   m_CullTransparentMesh: 1
+--- !u!1 &1407211537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1407211538}
+  - component: {fileID: 1407211541}
+  - component: {fileID: 1407211540}
+  - component: {fileID: 1407211539}
+  m_Layer: 5
+  m_Name: Text2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1407211538
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407211537}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.34, y: 0.62, z: 1}
+  m_Children: []
+  m_Father: {fileID: 340153532}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &1407211539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407211537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &1407211540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407211537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 71f442a0b5b748e4caab1de5a21ae88c, type: 3}
+    m_FontSize: 22
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 8
+    m_MaxSize: 52
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "Yes, we\u2019ve all been taught that the Earth is not flat, but it may
+    shock you to learn that it\u2019s not perfectly spherical either. As the National
+    Oceanic and Atmospheric Administration (NOAA) points out, Earth spins while gravity
+    pushes toward the center and a centrifugal force, perpendicular to Earth\u2019s
+    axis, pushes out. This results in a bit of a tilted shape\u2014not a perfect
+    sphere\n\nIt may be hard to wrap your brain around, but here on Earth, we\u2019re
+    constantly spinning. According to Space.com, Earth spins as fast as 1,000 miles
+    per hour but it depends where you\u2019re standing on the planet. At the equator,
+    you\u2019d be moving the fastest; at either the North or the South Pole, you
+    would\u2014surprisingly\u2014not be moving at all."
+--- !u!222 &1407211541
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407211537}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1463604806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1949,7 +2250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.779861
+      value: 18.35
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1957,7 +2258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 116.9631
+      value: 118.65
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2489,16 +2790,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dropdown: {fileID: 1843254286}
   DropdownTexts: []
-  infoTexts:
-  - {fileID: 1862881190}
-  - {fileID: 1572155212}
-  - {fileID: 463930661}
-  _statisticsText:
-  - {fileID: 261674585}
-  - {fileID: 1162236349}
   _activeInfoText: 0
   _infoObject: {fileID: 764175103}
   _statisticsObject: {fileID: 1997335752}
+  _factsObject: {fileID: 340153531}
 --- !u!1 &1843254284
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,7 +3078,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 621.5, y: 0}
+  m_AnchoredPosition: {x: 661, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1997335754
@@ -2801,3 +3096,111 @@ MonoBehaviour:
   statistics:
   - {fileID: 261674585}
   - {fileID: 1162236349}
+--- !u!1 &2031614455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2031614456}
+  - component: {fileID: 2031614459}
+  - component: {fileID: 2031614458}
+  - component: {fileID: 2031614457}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2031614456
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031614455}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.13, y: 0.22, z: 0}
+  m_Children: []
+  m_Father: {fileID: 340153532}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -507, y: 107}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2031614457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031614455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &2031614458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031614455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 71f442a0b5b748e4caab1de5a21ae88c, type: 3}
+    m_FontSize: 33
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 0
+    m_MaxSize: 144
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1.06
+  m_Text: "Earth is the only planet in the Solar System with plate tectonics. Basically,
+    the outer crust of the Earth is broken up into regions known as tectonic plates.
+    These are floating on top of the magma interior of the Earth and can move against
+    one another. When two plates collide, one plate will subduct (go underneath another),
+    and where they pull apart, they will allow fresh crust to form.This process is
+    very important, and for a number of reasons. Not only does it lead to tectonic
+    resurfacing and geological activity (i.e. earthquakes, volcanic eruptions, mountain-building,
+    and oceanic trench formation), it is also intrinsic to the carbon cycle. When
+    microscopic plants in the ocean die, they fall to the bottom of the ocean.\r\n\r\nOver
+    long periods of time, the remnants of this life, rich in carbon, are carried
+    back into the interior of the Earth and recycled. This pulls carbon out of the
+    atmosphere, which makes sure we don\u2019t suffer a runaway greenhouse effect,
+    which is what happened on Venus. Without the action of plate tectonics, there
+    would be no way to recycle this carbon, and the Earth would become an overheated,
+    hellish place."
+--- !u!222 &2031614459
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031614455}
+  m_CullTransparentMesh: 1
