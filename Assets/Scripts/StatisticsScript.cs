@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class StatisticsScript : MonoBehaviour
 {
-    [SerializeField] public  List<Text> statistics;
+    [SerializeField] public  List<TextMeshProUGUI> statistics;
     private static StatisticsScript _instance;
     public static StatisticsScript Instance
     {

@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Linq;
+using TMPro;
 
 public class PlanetSceneScript : MonoBehaviour
 {
@@ -73,7 +74,7 @@ public class PlanetSceneScript : MonoBehaviour
 
     }
 
-    public List<Text> SetList()
+    public List<TextMeshProUGUI> SetList()
     {
         if (_infoObject.activeSelf==true)
         {
@@ -84,11 +85,12 @@ public class PlanetSceneScript : MonoBehaviour
         {
             return StatisticsScript.Instance.statistics;
         }
-        else
+        else 
         {
             return FactsScript.Instance.facts;
         }
-                
+      
+
     }
 
 

@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
        
     [SerializeField] private Camera _camera;
-    [SerializeField] private float _panSpeed=100.0f;
+    [SerializeField] private float _speed=2.0f;
     [SerializeField] private float _panBorderThickness = 20.0f;
     
   
@@ -22,19 +22,19 @@ public class CameraController : MonoBehaviour
         if (Input.GetKey("w") )
         {
             
-            _camera.transform.Translate(Vector3.forward * _panSpeed * Time.deltaTime);
+            _camera.transform.Translate(Vector3.forward * _speed * Time.deltaTime);
         }
         if (Input.GetKey("s") )
         {
-            _camera.transform.Translate(-Vector3.forward * _panSpeed * Time.deltaTime);
+            _camera.transform.Translate(-Vector3.forward * _speed * Time.deltaTime);
         }
         if (Input.GetKey("d") )
         {
-            _camera.transform.Translate(-Vector3.left * _panSpeed * Time.deltaTime);
+            _camera.transform.Translate(-Vector3.left * _speed * Time.deltaTime);
         }
         if (Input.GetKey("a"))
         {
-            _camera.transform.Translate(Vector3.left * _panSpeed * Time.deltaTime);
+            _camera.transform.Translate(Vector3.left * _speed * Time.deltaTime);
 
         }
        

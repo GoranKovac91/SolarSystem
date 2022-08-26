@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class BasicInfoScript : MonoBehaviour
 {
-    [SerializeField] public List <Text> _basicInformation;
+    [SerializeField] public List <TextMeshProUGUI> _basicInformation;
     private static BasicInfoScript _instance;
     public static BasicInfoScript Instance
     {
